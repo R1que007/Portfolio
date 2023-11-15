@@ -1,6 +1,67 @@
 /* App.js */
-/* dov nees to be changed to a classname */
-
-div { 
-display: flex;
+.app{
+    align-items: center;  
+    background-color: rgb(209, 209, 209);
+}
+header { 
+    background-color: rgb(61, 89, 47);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: ivory;
+    border-style: outset;
+    border-color: black;
+}
+/* Body */
+p{
+    margin-top: 50px;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    font-style: italic;
+    font-size:small;
+}
+.Container{
+    min-height: 10px;
+    max-height: 1000px;
+    justify-content:center;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    border-style:ridge;
+}
+img {
+    padding-top: 25px;
+    max-width: 20%;
+    min-width: 280px;
+    padding-right: 15px;
+    border-style:solid;
+    border-color: ivory;
+    margin-right: 100px;
+    margin-top: 30px;
+    background-color: black;
+}
+#havingGrad{
+    min-width: 200px;
+    padding-left: 100px;
+    padding-right: 130px;
+    font-style: normal;
+    font-size:small;
+    text-align: left;
+    text-decoration:underline;
+    line-height: 1.9;
+    padding-bottom: 30px;
+}
+#aboutMePage{
+    background-color: rgb(61, 89, 47);
+    min-height: 700px;
+    max-height: 700px;
+    text-align: center;
+    font-style: italic;
+    font-size:x-large;
+    padding-top: 40px;
+    color: ivory;
 }
