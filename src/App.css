@@ -1,67 +1,77 @@
-/* App.js */
-.app{
-    align-items: center;  
-    background-color: rgb(209, 209, 209);
-}
-header { 
-    background-color: rgb(61, 89, 47);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: ivory;
-    border-style: outset;
-    border-color: black;
-}
-/* Body */
-p{
-    margin-top: 50px;
-    text-align: left;
-    padding-top: 20px;
-    padding-bottom: 25px;
-    font-style: italic;
-    font-size:small;
-}
-.Container{
-    min-height: 10px;
-    max-height: 1000px;
-    justify-content:center;
-    display: flex;
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    border-style:ridge;
-}
-img {
-    padding-top: 25px;
-    max-width: 20%;
-    min-width: 280px;
-    padding-right: 15px;
-    border-style:solid;
-    border-color: ivory;
-    margin-right: 100px;
-    margin-top: 30px;
+
+html, body {
     background-color: black;
 }
-#havingGrad{
-    min-width: 200px;
-    padding-left: 100px;
-    padding-right: 130px;
-    font-style: normal;
-    font-size:small;
-    text-align: left;
-    text-decoration:underline;
-    line-height: 1.9;
-    padding-bottom: 30px;
-}
-#aboutMePage{
-    background-color: rgb(61, 89, 47);
-    min-height: 700px;
-    max-height: 700px;
+/* Header */
+.Header{
+    height: 50px;
+    color:white;
+    font-size: x-large;
+    background-color: red;
+    display:flex;
+    justify-content: space-between;
+    position:fixed;
     text-align: center;
-    font-style: italic;
-    font-size:x-large;
-    padding-top: 40px;
-    color: ivory;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
+.nav-link {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color:white !important
+}
+/* Home Page */
+.FirstName{
+    color:white
+}
+.LastNameText{
+    color:red;
+    line-height: 0px;
+    font-size:60px;
+}
+.FirstNameText{
+    color:white;
+    font-size:60px;
+}
+.HomeName{
+    padding-top: 55px;
+    text-align: center;
+    background-color: black;
+    padding-bottom: 70px;
+}
+
+.Footer {
+    color: white;
+    background-color: red;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* margin-left: auto;
+    margin-right: auto; */
+    height: 50px;
+    font-size: x-large;
+
+}
+
+img{
+    width: 30%;
+    height: auto;
+    border-color: white;
+    border-style: solid;
+    border-style:inherit;
+    border-radius: 50%;
+    height:100%;
+    object-fit:cover;
+}
+.full-stack{
+    padding-top: 35px;
+    color:white;
+    font-size:60px;
+}
+
