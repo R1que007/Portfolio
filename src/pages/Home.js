@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from 'reactstrap'
-import proImg from '/Users/learnacademy/Desktop/my_portfolio/src/images/Rique.jpg'
+import proImg from '../images/Rique.jpg'
 const Home = () => {
   return (
     <div className='HomeName'> 
