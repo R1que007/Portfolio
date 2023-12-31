@@ -74,4 +74,17 @@ img{
     color:white;
     font-size:60px;
 }
+.about-me{
+    background-color: black;
+    color:white;
+    padding-top: 100px;
+    text-align: center;
+    font-size: larger;
+    padding-left: auto;
+    padding-right: auto;
+    width: auto
+}
 
+/* p {
+    width: 50%;
+} */
