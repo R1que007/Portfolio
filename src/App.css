@@ -38,7 +38,7 @@ html, body {
     font-size:60px;
 }
 .HomeName{
-    padding-top: 55px;
+    padding-top: 35px;
     text-align: center;
     background-color: black;
     padding-bottom: 70px;
@@ -62,15 +62,21 @@ html, body {
 img{
     width: 30%;
     height: auto;
-    border-color: white;
+    border-color: red;
     border-style: solid;
-    border-style:inherit;
     border-radius: 50%;
     height:100%;
     object-fit:cover;
+    overflow: hidden;
+    position: relative;
+    border: 8px solid red;       
+}
+.photo-container{
+    padding-left: 50%;
 }
 .full-stack{
     padding-top: 35px;
+    padding-bottom:20px;
     color:white;
     font-size:60px;
 }
