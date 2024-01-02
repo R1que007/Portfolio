@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from 'reactstrap'
-import proImg from '../images/Rique.jpg'
+import proImg from '../images/Rique.png'
 const Home = () => {
   return (
     <div className='HomeName'> 
@@ -9,7 +9,8 @@ const Home = () => {
             <h1 className='LastNameText'>-------Aguirre</h1>
         </Container>
           <div id='PhotoContainer'>
-            <marquee behavior="alternate">
+            <marquee
+             behavior="alternate" direction= "left" loop="10" width= "100%" scrollamount="15" scrolldelay="1" >
             <img src={proImg} alt='A very hansome guy' /> 
             </marquee>
           </div>
