@@ -30,41 +30,40 @@ export const ContactUs = () => {
         <form ref={form} onSubmit={sendEmail}>
           <div>
             <label>Name</label><br />
-            <input 
-            type="text" 
-            name="user_name" 
-            className='input-field'
-            placeholder='Your Name'
+            <input
+              type="text"
+              name="user_name"
+              className='input-field'
+              placeholder='Your Name'
             />
           </div>
           <div>
             <label>Email</label><br />
-            <input 
-            type="email" 
-            name="user_email" 
-            className='input-field'
-            placeholder='Your Email'
+            <input
+              type="email"
+              name="user_email"
+              className='input-field'
+              placeholder='Your Email'
             />
           </div>
           <div>
             <label>Message</label><br />
-            <textarea 
-            name="message" 
-            className='textarea-field'
-            placeholder='Write a message' 
+            <textarea
+              name="message"
+              className='textarea-field'
+              placeholder='Write a message'
             />
           </div>
           <div>
             <input type="submit" value="Send" className='submit-button' />
           </div>
-        </form>
-        {messageSent && (
-          <div 
-          classname="message-container">
-
-            <span style={{ color: 'green' }}>Your message was sent. Thank you!</span>
+          {messageSent && (
+            <div
+              classname="message-container">
+              <span style={{ color: 'green' }}>Your message was sent. Thank you!</span>
             </div>
-        )}
+          )}
+        </form>
       </div>
     </>
   );
