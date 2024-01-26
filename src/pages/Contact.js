@@ -1,36 +1,72 @@
-import React, { useRef } from 'react'
-import emailjs from 'emailjs-com'
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 
-const ContactMe = () => {
-  const form = useRef()
+
+
+export const ContactUs = () => {
+  const form = useRef();
+  const [messageSent, setMessageSent] = useState(false)
+
   const sendEmail = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
-    emailjs.sendForm(
-      process.env.REACT_APP_PUBLIC_KEY,
-      process.env.REACT_APP_TEMPATE_ID,
-      form.current,
-      process.env.REACT_APP_USER_ID
-    ).then(
-      result => console.log(result.text),
-      error => console.log(error.text)
-    )
-    e.target.reset()
-  }
+    emailjs.sendForm("service_i3sq21r", 'template_u11a76c', form.current, 'N1esR4gcZDpWte-Qn')
+      .then((result) => {
+        console.log(result.text);
+        //Reset form fields after successful subbission
+        form.current.reset()
+        //Show message indicating message sent
+        setMessageSent(true)
+        //Hide message after 3 seconds
+        setTimeout(() => setMessageSent(false), 3000)
+      }, (error) => {
+        console.log(error.text);
+      });
+  };
+
   return (
     <>
-    <div>How to contact Me</div>
-    <form ref={form} onSubmit={sendEmail}>
-    <label>Name</label>
-    <input type='text' name='user_name' required />
-    <label>Email</label>
-    <input type='email' name='user_email' required />
-    <label>Message</label>
-    <textarea name='message' required />
-    <input type='submit' value='Send' />
-    </form>
-    </>
-  )
-}
+      <div className='contactForm'>
+        <form ref={form} onSubmit={sendEmail}>
+          <div>
+            <label>Name</label><br />
+            <input 
+            type="text" 
+            name="user_name" 
+            className='input-field'
+            placeholder='Your Name'
+            />
+          </div>
+          <div>
+            <label>Email</label><br />
+            <input 
+            type="email" 
+            name="user_email" 
+            className='input-field'
+            placeholder='Your Email'
+            />
+          </div>
+          <div>
+            <label>Message</label><br />
+            <textarea 
+            name="message" 
+            className='textarea-field'
+            placeholder='Write a message' 
+            />
+          </div>
+          <div>
+            <input type="submit" value="Send" className='submit-button' />
+          </div>
+        </form>
+        {messageSent && (
+          <div 
+          classname="message-container">
 
-export default ContactMe
+            <span style={{ color: 'green' }}>Your message was sent. Thank you!</span>
+            </div>
+        )}
+      </div>
+    </>
+  );
+};
+export default ContactUs

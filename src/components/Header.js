@@ -3,6 +3,8 @@ import { Nav, NavItem } from "reactstrap";
 import { NavLink } from 'react-router-dom';
 
 const Header = () => {
+    const email = "aguirree1985@gmail.com"
+
     return (
         <>
         <div className='Header'>
@@ -37,9 +39,9 @@ const Header = () => {
             <div>
                 <Nav>
                     <NavItem>
-                        <NavLink className="nav-link"  href="#">
-                            aguirree1985@gmail.com
-                        </NavLink>
+                        <a className="nav-link" href={`mailto:${email}`} aria-label="Email">
+                            {email}
+                        </a>
                     </NavItem>
                 </Nav>
             </div>
