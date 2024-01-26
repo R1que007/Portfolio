@@ -6,7 +6,7 @@ const Footer = () => {
 
     return (
         <>
-           <footer className='Footer'>{`Copyright ©  ${year} Enrique Aguirre`}
+           <footer className='Footer'>{`©  ${year} Enrique Aguirre`}
            </footer>
        </>
     )

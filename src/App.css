@@ -1,16 +1,17 @@
-
-html, body {
+html,
+body {
     background-color: black;
 }
+
 /* Header */
-.Header{
+.Header {
     height: 50px;
-    color:white;
+    color: white;
     font-size: x-large;
     background-color: red;
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    position:fixed;
+    position: fixed;
     text-align: center;
     top: 0;
     left: 0;
@@ -18,26 +19,31 @@ html, body {
     margin-left: auto;
     margin-right: auto;
 }
+
 .nav-link {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    color:white !important
+    color: white !important
 }
+
 /* Home Page */
-.FirstName{
-    color:white
+.FirstName {
+    color: white
 }
-.LastNameText{
-    color:red;
+
+.LastNameText {
+    color: red;
     line-height: 0px;
-    font-size:60px;
+    font-size: 60px;
 }
-.FirstNameText{
-    color:white;
-    font-size:60px;
+
+.FirstNameText {
+    color: white;
+    font-size: 60px;
 }
-.HomeName{
+
+.HomeName {
     padding-top: 35px;
     text-align: center;
     background-color: black;
@@ -59,38 +65,147 @@ html, body {
 
 }
 
-img{
+img {
     width: 30%;
     height: auto;
     border-color: red;
     border-style: solid;
     border-radius: 50%;
-    height:100%;
-    object-fit:cover;
+    height: 100%;
+    object-fit: cover;
     overflow: hidden;
     position: relative;
-    border: 8px solid red;       
+    border: 8px solid red;
 }
-.photo-container{
+
+.photo-container {
     padding-left: 50%;
 }
-.full-stack{
+
+.full-stack {
     padding-top: 35px;
-    padding-bottom:20px;
-    color:white;
-    font-size:60px;
+    padding-bottom: 20px;
+    color: white;
+    font-size: 60px;
 }
-.about-me{
+
+.about-me {
     background-color: black;
-    color:white;
-    padding-top: 100px;
+    color: white;
+    padding-top: 150px;
     text-align: center;
     font-size: larger;
     padding-left: auto;
     padding-right: auto;
     width: auto
 }
+P{
+    margin-right: 20%;
+    margin-left: 20%;
+}
+/* Contact page */
+.contactForm{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust height as needed */
+    
+}
+.contactForm .message-container {
+    
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Adjust the height as needed */
+  }
+  .input-field {
+    width: 300px; /* Adjust the width as needed */
+    padding: 8px; /* Adjust the padding as needed */
+    border: 1px solid #ccc; /* Add border styles as needed */
+    border-radius: 4px; /* Add border-radius as needed */
+  }
+  
+  .textarea-field {
+    width: 300px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    padding: 8px; /* Adjust the padding as needed */
+    border: 1px solid #ccc; /* Add border styles as needed */
+    border-radius: 4px; /* Add border-radius as needed */
+  }
+  
+  .submit-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049; /* Darker green background on hover */
+  }
 
-/* p {
-    width: 50%;
-} */
+
+  /* Projects Page */
+  .card-container {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust height as needed */
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px; /* Adjust width as needed */
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.card-subtitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-technologies {
+    margin-bottom: 15px;
+}
+
+.card-technologies li {
+    list-style-type: none;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-link {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.card-link:hover {
+    background-color: #eee;
+}
+  
