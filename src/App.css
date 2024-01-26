@@ -109,7 +109,8 @@ P{
     background-color: black;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Adjust height as needed */
+    height: 100vh; 
+    text-align: center;
     
 }
 .contactForm .message-container {
@@ -118,13 +119,13 @@ P{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px; /* Adjust the height as needed */
+    height: 400px; 
   }
   .input-field {
-    width: 300px; /* Adjust the width as needed */
-    padding: 8px; /* Adjust the padding as needed */
-    border: 1px solid #ccc; /* Add border styles as needed */
-    border-radius: 4px; /* Add border-radius as needed */
+    width: 300px; 
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 9px; 
   }
   
   .textarea-field {
@@ -132,7 +133,7 @@ P{
     height: 100px; /* Adjust the height as needed */
     padding: 8px; /* Adjust the padding as needed */
     border: 1px solid #ccc; /* Add border styles as needed */
-    border-radius: 4px; /* Add border-radius as needed */
+    border-radius: 9px; /* Add border-radius as needed */
   }
   
   .submit-button {
@@ -150,13 +151,6 @@ P{
 
 
   /* Projects Page */
-  .card-container {
-    display: flex;
-    background-color: black;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Adjust height as needed */
-}
 
 .card {
     border: 1px solid #ccc;
@@ -207,5 +201,16 @@ P{
 
 .card-link:hover {
     background-color: #eee;
+}
+.center-content {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+}
+
+.card {
+    /* Add any additional styles for your card */
 }
   
