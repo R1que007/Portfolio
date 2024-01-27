@@ -6,31 +6,26 @@ const Header = () => {
     const email = "aguirree1985@gmail.com"
 
     return (
-        <>
-        <div className='Header'>
-            <div className='HeaderLeft'>
-                <Nav >
+        <div className='header'>
+            <div className='header-left'>
+                <Nav>
                     <NavItem>
-                        <NavLink className="nav-link" to="/"
-                        >
+                        <NavLink className="nav-link" to="/" activeClassName="active-link">
                             Home
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="nav-link" to="/aboutme">
+                        <NavLink className="nav-link" to="/aboutme" activeClassName="active-link">
                             About Me
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="nav-link" to="myprojects">
+                        <NavLink className="nav-link" to="/myprojects" activeClassName="active-link">
                             Projects
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="nav-link" to="contact"
-                        //disabled
-
-                        >
+                        <NavLink className="nav-link" to="/contact" activeClassName="active-link">
                             Contact Me
                         </NavLink>
                     </NavItem>
@@ -46,8 +41,7 @@ const Header = () => {
                 </Nav>
             </div>
         </div>
-        </>
-    )
+    );
 }
 
 export default Header

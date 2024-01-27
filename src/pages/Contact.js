@@ -34,7 +34,7 @@ export const ContactUs = () => {
               type="text"
               name="user_name"
               className='input-field'
-              placeholder='Your Name'
+              placeholder='Elo Muse'
             />
           </div>
           <div>
@@ -43,7 +43,7 @@ export const ContactUs = () => {
               type="email"
               name="user_email"
               className='input-field'
-              placeholder='Your Email'
+              placeholder="Imlookingtohire@work.com"
             />
           </div>
           <div>
@@ -51,7 +51,7 @@ export const ContactUs = () => {
             <textarea
               name="message"
               className='textarea-field'
-              placeholder='Write a message'
+              placeholder="You're hired"
             />
           </div>
           <div>
