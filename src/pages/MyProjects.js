@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import backgroundImage from '../images/Lama.png'; // Path to your background image
 
 const MyProjects = () => {
-  // Sample project data
+  //State to track whether the image is loaded
+  const [imageLoaded, setImageLoaded] = useState(false)
+
+  //Effect to preload the background image
+  useEffect(() => {
+    const img = new Image()
+    img.src = backgroundImage
+    img.onload = () => {
+      setImageLoaded(true)
+    }
+  }, [])
+
   const project = {
       title: 'Laugh Host: 3001',
       description: 'Our capstone project, developed at LEARN Academy, is a React frontend application paired with a Rails API backend. It features full CRUD functionality and user authentication using Devise for signup, login, and logout.',
