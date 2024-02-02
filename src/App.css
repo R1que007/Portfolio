@@ -44,7 +44,7 @@ body {
 }
 
 .HomeName {
-    padding-top: 35px;
+    padding-top: 5px;
     text-align: center;
     background-color: black;
     padding-bottom: 70px;
@@ -66,7 +66,7 @@ body {
 }
 
 img {
-    width: 30%;
+    width: 25%;
     height: auto;
     border-color: red;
     border-style: solid;
@@ -92,7 +92,7 @@ img {
 .about-me {
     background-color: black;
     color: white;
-    padding-top: 150px;
+    padding: 50px;
     text-align: center;
     font-size: larger;
     padding-left: auto;
@@ -224,6 +224,19 @@ P{
     align-items: center;
 }
 
+/* Style for the hover effect on header items */
+.nav-link {
+  color: #333; /* Set default color */
+  font-size: 16px; /* Set default font size */
+  transition: all 0.3s ease; /* Add transition for smooth effect */
+}
+
+.nav-link:hover {
+  color: #000 !important; /* Change color to black on hover */
+  font-size: 18px; /* Increase font size on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
 .header-left {
     display: flex;
 }
@@ -237,18 +250,15 @@ P{
 .nav-link:hover {
     color: #ddd;
 }
-
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
+.rotate {
+    animation: rotate 5s linear infinite; /* Adjust the duration and timing function as needed */
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
     }
-
-    .header-left {
-        margin-bottom: 10px;
+    to {
+      transform: rotate(360deg);
     }
-
-    .nav-link {
-        margin: 5px 0;
-    }
-}
+  }
