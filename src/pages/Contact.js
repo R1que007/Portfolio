@@ -1,8 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-
-
 export const ContactUs = () => {
   const form = useRef();
   const [messageSent, setMessageSent] = useState(false)
@@ -10,7 +8,11 @@ export const ContactUs = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm("service_i3sq21r", 'template_u11a76c', form.current, 'N1esR4gcZDpWte-Qn')
+    emailjs.sendForm(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID, 
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID, 
+      form.current, 
+      process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
       .then((result) => {
         console.log(result.text);
         //Reset form fields after successful subbission

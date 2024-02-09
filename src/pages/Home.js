@@ -2,6 +2,7 @@ import React from 'react'
 import { Container } from 'reactstrap'
 import proImg from '../images/Rique.png'
 import '../App.css'
+
 const Home = () => {
   return (
     <div className='HomeName'> 
@@ -14,7 +15,8 @@ const Home = () => {
           </div>
           <h1 className='full-stack'>Full-Stack Web Developer
           </h1>
-          <h4 className='LastNameText'>JavaScript - React - Ruby on Rails </h4>
+          <h1 className='stack-text'>JavaScript React Ruby on Rails </h1>
+          
     </div>
   )
 }
