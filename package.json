@@ -42,5 +42,8 @@
   },
   "engines": {
     "node": "20.7.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }

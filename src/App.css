@@ -3,29 +3,27 @@ body {
     background-color: black;
 }
 
-/* Header */
-.Header {
-    height: 50px;
-    color: white;
-    font-size: x-large;
+.header {
     background-color: red;
+    color: #fff;
+    padding: 0px;
     display: flex;
     justify-content: space-between;
-    position: fixed;
-    text-align: center;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
 }
 
 .nav-link {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    color: white !important
+    color: white !important; 
+    font-size: x-large !important
 }
+.active-link .nav-link {
+    color: rgb(83, 40, 40) !important; /* Change the color to grey for the active link */
+    /* Add any other styles you want for the active link */
+}
+
 
 /* Home Page */
 .FirstName {
@@ -36,11 +34,12 @@ body {
     color: red;
     line-height: 0px;
     font-size: 60px;
+    font-size: 4rem;
 }
 
 .FirstNameText {
     color: white;
-    font-size: 60px;
+    font-size: 4rem;
 }
 
 .HomeName {
@@ -48,7 +47,54 @@ body {
     text-align: center;
     background-color: black;
     padding-bottom: 70px;
+    align-items: center;
 }
+ 
+.stack-text{
+    color: red;
+    line-height: 0px;
+    font-size: 60px;
+    font-size: 4rem;
+}
+  
+  .full-stack {
+    font-size: 2rem;
+  }
+  
+  /* Media queries for smaller screens */
+  @media (max-width: 768px) {
+    .FirstNameText {
+      font-size: 4rem;
+    }
+  
+    .LastNameText {
+      font-size: 4rem;
+    }
+  
+    .full-stack {
+      font-size: 1.5rem;
+    }
+    .stack-text {
+        font-size: 3rem;
+      }
+  }
+  .div-stack-text{
+    flex-wrap: wrap;
+  }
+  
+  @media (max-width: 576px) {
+    .FirstNameText {
+      font-size: 2rem;
+    }
+  
+    .LastNameText {
+      font-size: 1.2rem;
+    }
+  
+    .full-stack {
+      font-size: 1.2rem;
+    }
+  }
 
 .Footer {
     color: white;
@@ -65,7 +111,7 @@ body {
 
 }
 
-img {
+.rotate {
     width: 23%;
     height: auto;
     border-color: red;
@@ -103,19 +149,34 @@ P{
     margin-right: 20%;
     margin-left: 20%;
 }
+
+/* About Me */
+.map-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    height: 80vh; /* Set the height of the container to 100% of the viewport height */
+    padding: 30px;
+  }
+  
+  .map-img img {
+    max-width: 100%; /* Set the maximum width of the image to 100% */
+    max-height: 90%; /* Set the maximum height of the image to 100% */
+  }
 /* Contact page */
 .contactForm{
     display: flex;
     background-color: black;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
+    height: 80%; 
+    padding: 100px;
     text-align: center;
-    color:white
+    color:rgb(136, 198, 255)
     
 }
 .contactForm .message-container {
-    
     color: green;
     display: flex;
     justify-content: center;
@@ -204,26 +265,18 @@ P{
     background-color: #eee;
 }
 .center-content {
+    padding: 90px;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
 }
 
 .card {
     /* Add any additional styles for your card */
 }
   
-.header {
-    background-color: red;
-    color: #fff;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 /* Style for the hover effect on header items */
 .nav-link {
   color: #333; /* Set default color */
@@ -237,10 +290,13 @@ P{
   text-decoration: underline; /* Add underline on hover */
 }
 
-.header-left {
+.mr-auto {
     display: flex;
 }
 
+.active-link {
+    color: grey;
+}
 .nav-link {
     color: #fff;
     text-decoration: none;
