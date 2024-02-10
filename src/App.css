@@ -75,7 +75,7 @@ body {
       font-size: 1.5rem;
     }
     .stack-text {
-        font-size: 3rem;
+        font-size: rem;
       }
   }
   .div-stack-text{
@@ -84,15 +84,42 @@ body {
   
   @media (max-width: 576px) {
     .FirstNameText {
-      font-size: 2rem;
+      font-size: 4rem;
+      padding: 2rem;
+      padding-top: 5rem;
     }
   
     .LastNameText {
-      font-size: 1.2rem;
+      font-size: 4rem;
     }
   
     .full-stack {
       font-size: 1.2rem;
+      padding: 2rem;
+    }
+    .stack-text{
+      font-size: 2rem;
+      padding: 2rem;
+    }
+  }
+  @media (min-width: 576px) and (max-width: 768px) {
+    .FirstNameText {
+      font-size: 4rem;
+      padding: 2rem;
+      padding-top: 5rem;
+    }
+  
+    .LastNameText {
+      font-size: 4rem;
+    }
+  
+    .full-stack {
+      font-size: 1.2rem;
+      padding: 3rem;
+    }
+    .stack-text{
+      font-size: 2.5rem;
+      padding-top: 2rem;
     }
   }
 
@@ -151,16 +178,20 @@ P{
 }
 
 /* About Me */
-.map-img {
+.about-me {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #000;
     height: 80vh; /* Set the height of the container to 100% of the viewport height */
     padding: 30px;
+    flex-direction: column;
   }
-  
-  .map-img img {
+  .about-me-heading{
+    color: white;
+    padding: 2rem;
+  }
+  .about-me img {
     max-width: 100%; /* Set the maximum width of the image to 100% */
     max-height: 90%; /* Set the maximum height of the image to 100% */
   }
@@ -298,10 +329,11 @@ P{
     color: grey;
 }
 .nav-link {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 15px;
-}
+    /* color: #cf2424; */
+    /* text-decoration: none; */
+    /* margin-right: 15px; */
+    text-align: right;
+} 
 
 .nav-link:hover {
     color: #ddd;
